@@ -1,0 +1,117 @@
+<div class="st-site" data-page="Studio">
+<header class="st-head" id="st-head">
+    <div class="st-head-row">
+        <button type="button" class="st-burger" aria-label="Menu" onclick="StudioJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="st-logo" href="Home" aria-label="Panelmoon home"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="st-logo-t">Panel<span>moon</span></span></a>
+        <nav class="st-nav" id="st-nav" aria-label="Main">
+            <div class="st-nav-top"><span class="st-logo"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="st-logo-t">Panel<span>moon</span></span></span>
+                <button type="button" class="st-nav-x" aria-label="Close" onclick="StudioJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="st-menu"><li><a class="st-ml" href="Daily">New &amp; Daily</a></li><li><a class="st-ml" href="Genres">Genres</a></li><li><a class="st-ml" href="Artists">Artists</a></li><li><a class="st-ml" href="Membership">Membership</a></li><li><a class="st-ml" href="About">About</a></li></ul>
+            <div class="st-nav-acct" id="st-nav-acct">
+                <a class="st-btn st-btn-o" href="Login"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.4 4.2-6.5 8-6.5s7 2.1 8 6.5"/></svg> Member login</a>
+                <a class="st-btn" href="ArtistLogin"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg> Artist login</a>
+            </div>
+            <div class="st-nav-g"><div class="st-nav-gt">Genres</div><a href="Genres?g=fantasy" style="--st-g:#6C4BF4">Fantasy</a><a href="Genres?g=romance" style="--st-g:#E8487A">Romance</a><a href="Genres?g=action" style="--st-g:#F07B1F">Action</a><a href="Genres?g=comedy" style="--st-g:#2FA35A">Comedy</a><a href="Genres?g=slice-of-life" style="--st-g:#D9862E">Slice of Life</a><a href="Genres?g=mystery" style="--st-g:#2E6F8E">Mystery</a><a href="Genres?g=sci-fi" style="--st-g:#7A55C9">Sci-Fi</a><a href="Genres?g=spooky" style="--st-g:#4A4A8A">Spooky</a></div>
+        </nav>
+        <div class="st-search" id="st-search">
+            <span class="st-search-ic"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+            <input type="search" id="st-q" placeholder="Search series, episodes, artists" autocomplete="off" maxlength="40" oninput="StudioJs.search(this.value)" onfocus="StudioJs.search(this.value)" onkeydown="StudioJs.searchKey(event)" aria-label="Search">
+            <div class="st-sugg" id="st-sugg"></div>
+        </div>
+        <button type="button" class="st-sbtn" aria-label="Search" onclick="StudioJs.toggleSearch()"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+        <div class="st-acct" id="st-acct">
+            <a class="st-btn st-btn-s st-btn-o" href="Login">Log in</a>
+            <a class="st-btn st-btn-s" href="ArtistLogin"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><span>Artist</span></a>
+        </div>
+    </div>
+    <div class="st-gbar"><div class="st-gbar-in"><a href="Genres?g=fantasy" style="--st-g:#6C4BF4">Fantasy</a><a href="Genres?g=romance" style="--st-g:#E8487A">Romance</a><a href="Genres?g=action" style="--st-g:#F07B1F">Action</a><a href="Genres?g=comedy" style="--st-g:#2FA35A">Comedy</a><a href="Genres?g=slice-of-life" style="--st-g:#D9862E">Slice of Life</a><a href="Genres?g=mystery" style="--st-g:#2E6F8E">Mystery</a><a href="Genres?g=sci-fi" style="--st-g:#7A55C9">Sci-Fi</a><a href="Genres?g=spooky" style="--st-g:#4A4A8A">Spooky</a></div></div>
+    <div class="st-scrim" id="st-scrim" onclick="StudioJs.closeNav()"></div>
+</header>
+<main class="st-main">
+<section class="st-gate" id="st-gate">
+    <div class="st-gate-card">
+        <div class="st-gate-ic"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg></div>
+        <h1>Artist Studio</h1>
+        <p>Sign in with your artist account to publish episodes. In this demo, any email and password will work.</p>
+        <a class="st-btn" href="ArtistLogin">Artist login</a>
+        <p class="st-alt">Just reading? <a href="Home">Back to comics</a></p>
+    </div>
+</section>
+<section class="st-studio" id="st-studio">
+    <div class="st-shead">
+        <div class="st-wrap">
+            <div class="st-eyebrow">Artist Studio</div>
+            <h1>Welcome back, <span id="st-aname">artist</span></h1>
+            <div class="st-stats" id="st-stats">{plhd_stats}</div>
+        </div>
+    </div>
+    <div class="st-wrap st-pub">
+        <form class="st-form st-pub-form" onsubmit="return StudioJs.publish()" novalidate>
+            <h2 class="st-h2">New episode</h2>
+            <label class="st-field" for="st-series"><span>Series</span><select id="st-series" onchange="StudioJs.seriesPick(this.value)">{plhd_sopts}</select><em class="st-err" id="st-e-series"></em></label>
+            <div class="st-newseries" id="st-newseries">
+                <label class="st-field" for="st-newtitle"><span>New series title</span><input type="text" id="st-newtitle" maxlength="60" placeholder="e.g. Moonlight Mail"><em class="st-err" id="st-e-new"></em></label>
+                <label class="st-field" for="st-genre"><span>Genre</span><select id="st-genre">{plhd_gopts}</select><em class="st-err" id="st-e-genre"></em></label>
+                <div class="st-field"><span>Schedule</span><div class="st-seg st-seg-f"><label><input type="radio" name="st-sched" value="weekly" checked onchange="StudioJs.schedSet()"><span>Weekly</span></label><label><input type="radio" name="st-sched" value="daily" onchange="StudioJs.schedSet()"><span>Daily</span></label></div>
+                    <select id="st-day" class="st-day-sel">{plhd_dopts}</select><em class="st-err" id="st-e-sched"></em></div>
+            </div>
+            <div class="st-row2">
+                <label class="st-field st-f-no" for="st-no"><span>Episode #</span><input type="number" id="st-no" min="1" max="999" value="1"><em class="st-err" id="st-e-no"></em></label>
+                <label class="st-field" for="st-title"><span>Episode title</span><input type="text" id="st-title" maxlength="60" placeholder="e.g. The Missing Star"><em class="st-err" id="st-e-title"></em></label>
+            </div>
+            <div class="st-field"><span>Release</span>
+                <div class="st-seg st-seg-f"><label><input type="radio" name="st-when" value="now" checked onchange="StudioJs.whenSet()"><span>Publish now</span></label><label><input type="radio" name="st-when" value="later" onchange="StudioJs.whenSet()"><span>Schedule</span></label></div>
+                <div class="st-when" id="st-whenrow"><input type="date" id="st-date" min="{plhd_today}" max="{plhd_max}" value="{plhd_today}"><input type="time" id="st-time" value="09:00"></div>
+                <em class="st-err" id="st-e-when"></em><small class="st-hint" id="st-schedhint"></small></div>
+            <label class="st-field" for="st-note"><span>Note to readers <small>(optional)</small></span><textarea id="st-note" rows="3" maxlength="300" placeholder="Thanks for reading! Next week: the bell tower."></textarea><em class="st-err" id="st-e-note"></em></label>
+            <label class="st-check"><input type="checkbox" id="st-rights"><span>I made this artwork or have the rights to publish it.</span></label>
+            <em class="st-err" id="st-e-rights"></em>
+            <div class="st-pub-btns"><button type="button" class="st-btn st-btn-o" onclick="StudioJs.preview()">Preview</button><button type="submit" class="st-btn" id="st-pubbtn">Publish episode</button></div>
+            <div class="st-pdone" id="st-pdone" aria-live="polite"></div>
+        </form>
+        <div class="st-pages">
+            <div class="st-pages-h"><h2 class="st-h2">Pages <small id="st-pcount">0</small></h2><button type="button" class="st-link" onclick="StudioJs.samplePages()">Use sample pages</button></div>
+            <label class="st-drop" id="st-drop" for="st-files">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+                <b>Drag &amp; drop your pages here</b>
+                <span>or <u>browse your files</u> &middot; JPG, PNG, WEBP or GIF &middot; up to 10 MB each</span>
+                <input type="file" id="st-files" accept="image/jpeg,image/png,image/webp,image/gif" multiple onchange="StudioJs.addFiles(this.files)">
+            </label>
+            <p class="st-hint">Drag the thumbnails to change the reading order. Your images stay in your browser &mdash; nothing is uploaded in this demo.</p>
+            <em class="st-err" id="st-e-pages"></em>
+            <ol class="st-thumbs" id="st-thumbs"></ol>
+            <div class="st-recent" id="st-recentbox"><h3>Published this session</h3><ul id="st-recent"></ul></div>
+        </div>
+    </div>
+</section>
+<div class="st-pv" id="st-pv" role="dialog" aria-modal="true" aria-label="Preview">
+    <div class="st-pv-in">
+        <div class="st-pv-h"><b id="st-pvtitle">Preview</b><button type="button" class="st-pv-x" onclick="StudioJs.closePreview()" aria-label="Close"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+        <section class="st-reader" id="st-reader">
+            <div class="st-stage" id="st-stage"><div class="st-book" id="st-book"></div>
+                <button type="button" class="st-turn st-turn-p" id="st-tprev" aria-label="Previous page" onclick="StudioJs.prev()">&lsaquo;</button>
+                <button type="button" class="st-turn st-turn-n" id="st-tnext" aria-label="Next page" onclick="StudioJs.next()">&rsaquo;</button></div>
+            <template id="st-endtpl"><div class="st-endcard"><div class="st-eyebrow">End of preview</div><h3>Looks good?</h3><p>Close the preview and publish when you&rsquo;re ready.</p><button type="button" class="st-btn" onclick="StudioJs.closePreview()">Back to Studio</button></div></template>
+            <div class="st-rbar"><button type="button" class="st-rb" onclick="StudioJs.first()" aria-label="First page">&laquo;</button><span class="st-rcount" id="st-rcount">1 / 1</span><div class="st-rprog"><i id="st-rprog"></i></div><button type="button" class="st-rb" id="st-rmode" onclick="StudioJs.toggleMode()">Book view</button></div>
+            <div class="st-strip" id="st-strip"></div>
+        </section>
+    </div>
+</div>
+</main>
+<footer class="st-foot">
+    <div class="st-foot-in">
+        <div class="st-fbrand">
+            <a class="st-logo st-logo-l" href="Home"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="st-logo-t">Panel<span>moon</span></span></a>
+            <p>Comics that turn the page. Daily and weekly series from independent artists, read in a page-flipping reader on any screen.</p>
+            <form class="st-nl" onsubmit="return StudioJs.newsletter()">
+                <label for="st-nl-email">New-episode picks, once a week</label>
+                <div class="st-nl-row"><input type="email" id="st-nl-email" placeholder="you@example.com" maxlength="80" autocomplete="email"><button type="submit" class="st-btn st-btn-s">Subscribe</button></div>
+                <div class="st-nl-msg" id="st-nl-msg" aria-live="polite"></div>
+            </form>
+        </div>
+        <div class="st-fcol"><div class="st-ftitle">Read</div><ul><li><a href="Daily">New &amp; Daily</a></li><li><a href="Genres">All genres</a></li><li><a href="Daily?d=done">Completed series</a></li><li><a href="Search">Search</a></li></ul></div><div class="st-fcol"><div class="st-ftitle">Create</div><ul><li><a href="Studio">Artist Studio</a></li><li><a href="ArtistLogin">Artist login</a></li><li><a href="Membership#plans">Creator plan</a></li><li><a href="Artists">Artists</a></li></ul></div><div class="st-fcol"><div class="st-ftitle">Panelmoon</div><ul><li><a href="About">About Panelmoon</a></li><li><a href="Membership">Membership</a></li><li><a href="Login">Member login</a></li><li><a href="About#contact">Contact</a></li></ul></div>
+    </div>
+    <div class="st-foot-b"><span>&copy; 2026 Panelmoon &middot; A fictional demo built with the SkyNet Framework</span><span>All series, artists, comments and numbers are invented.</span></div>
+</footer>
+<div class="st-toast" id="st-toast" role="status" aria-live="polite"></div>
+</div>

@@ -1,0 +1,51 @@
+<div class="ep-site" data-page="Episode">
+<header class="ep-head" id="ep-head">
+    <div class="ep-head-row">
+        <button type="button" class="ep-burger" aria-label="Menu" onclick="EpisodeJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="ep-logo" href="Home" aria-label="Panelmoon home"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="ep-logo-t">Panel<span>moon</span></span></a>
+        <nav class="ep-nav" id="ep-nav" aria-label="Main">
+            <div class="ep-nav-top"><span class="ep-logo"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="ep-logo-t">Panel<span>moon</span></span></span>
+                <button type="button" class="ep-nav-x" aria-label="Close" onclick="EpisodeJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="ep-menu"><li><a class="ep-ml" href="Daily">New &amp; Daily</a></li><li><a class="ep-ml ep-on" href="Genres">Genres</a></li><li><a class="ep-ml" href="Artists">Artists</a></li><li><a class="ep-ml" href="Membership">Membership</a></li><li><a class="ep-ml" href="About">About</a></li></ul>
+            <div class="ep-nav-acct" id="ep-nav-acct">
+                <a class="ep-btn ep-btn-o" href="Login"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.4 4.2-6.5 8-6.5s7 2.1 8 6.5"/></svg> Member login</a>
+                <a class="ep-btn" href="ArtistLogin"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg> Artist login</a>
+            </div>
+            <div class="ep-nav-g"><div class="ep-nav-gt">Genres</div><a href="Genres?g=fantasy" style="--ep-g:#6C4BF4">Fantasy</a><a href="Genres?g=romance" style="--ep-g:#E8487A">Romance</a><a href="Genres?g=action" style="--ep-g:#F07B1F">Action</a><a href="Genres?g=comedy" style="--ep-g:#2FA35A">Comedy</a><a href="Genres?g=slice-of-life" style="--ep-g:#D9862E">Slice of Life</a><a href="Genres?g=mystery" style="--ep-g:#2E6F8E">Mystery</a><a href="Genres?g=sci-fi" style="--ep-g:#7A55C9">Sci-Fi</a><a href="Genres?g=spooky" style="--ep-g:#4A4A8A">Spooky</a></div>
+        </nav>
+        <div class="ep-search" id="ep-search">
+            <span class="ep-search-ic"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+            <input type="search" id="ep-q" placeholder="Search series, episodes, artists" autocomplete="off" maxlength="40" oninput="EpisodeJs.search(this.value)" onfocus="EpisodeJs.search(this.value)" onkeydown="EpisodeJs.searchKey(event)" aria-label="Search">
+            <div class="ep-sugg" id="ep-sugg"></div>
+        </div>
+        <button type="button" class="ep-sbtn" aria-label="Search" onclick="EpisodeJs.toggleSearch()"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+        <div class="ep-acct" id="ep-acct">
+            <a class="ep-btn ep-btn-s ep-btn-o" href="Login">Log in</a>
+            <a class="ep-btn ep-btn-s" href="ArtistLogin"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><span>Artist</span></a>
+        </div>
+    </div>
+    <div class="ep-gbar"><div class="ep-gbar-in"><a href="Genres?g=fantasy" style="--ep-g:#6C4BF4">Fantasy</a><a href="Genres?g=romance" style="--ep-g:#E8487A">Romance</a><a href="Genres?g=action" style="--ep-g:#F07B1F">Action</a><a href="Genres?g=comedy" style="--ep-g:#2FA35A">Comedy</a><a href="Genres?g=slice-of-life" style="--ep-g:#D9862E">Slice of Life</a><a href="Genres?g=mystery" style="--ep-g:#2E6F8E">Mystery</a><a href="Genres?g=sci-fi" style="--ep-g:#7A55C9">Sci-Fi</a><a href="Genres?g=spooky" style="--ep-g:#4A4A8A">Spooky</a></div></div>
+    <div class="ep-scrim" id="ep-scrim" onclick="EpisodeJs.closeNav()"></div>
+</header>
+<main class="ep-main">
+{plhd_top}
+{plhd_reader}
+{plhd_after}
+</main>
+<footer class="ep-foot">
+    <div class="ep-foot-in">
+        <div class="ep-fbrand">
+            <a class="ep-logo ep-logo-l" href="Home"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="ep-logo-t">Panel<span>moon</span></span></a>
+            <p>Comics that turn the page. Daily and weekly series from independent artists, read in a page-flipping reader on any screen.</p>
+            <form class="ep-nl" onsubmit="return EpisodeJs.newsletter()">
+                <label for="ep-nl-email">New-episode picks, once a week</label>
+                <div class="ep-nl-row"><input type="email" id="ep-nl-email" placeholder="you@example.com" maxlength="80" autocomplete="email"><button type="submit" class="ep-btn ep-btn-s">Subscribe</button></div>
+                <div class="ep-nl-msg" id="ep-nl-msg" aria-live="polite"></div>
+            </form>
+        </div>
+        <div class="ep-fcol"><div class="ep-ftitle">Read</div><ul><li><a href="Daily">New &amp; Daily</a></li><li><a href="Genres">All genres</a></li><li><a href="Daily?d=done">Completed series</a></li><li><a href="Search">Search</a></li></ul></div><div class="ep-fcol"><div class="ep-ftitle">Create</div><ul><li><a href="Studio">Artist Studio</a></li><li><a href="ArtistLogin">Artist login</a></li><li><a href="Membership#plans">Creator plan</a></li><li><a href="Artists">Artists</a></li></ul></div><div class="ep-fcol"><div class="ep-ftitle">Panelmoon</div><ul><li><a href="About">About Panelmoon</a></li><li><a href="Membership">Membership</a></li><li><a href="Login">Member login</a></li><li><a href="About#contact">Contact</a></li></ul></div>
+    </div>
+    <div class="ep-foot-b"><span>&copy; 2026 Panelmoon &middot; A fictional demo built with the SkyNet Framework</span><span>All series, artists, comments and numbers are invented.</span></div>
+</footer>
+<div class="ep-toast" id="ep-toast" role="status" aria-live="polite"></div>
+</div>

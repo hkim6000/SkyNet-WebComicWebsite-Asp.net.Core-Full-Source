@@ -1,0 +1,66 @@
+<div class="gn-site" data-page="Genres">
+<header class="gn-head" id="gn-head">
+    <div class="gn-head-row">
+        <button type="button" class="gn-burger" aria-label="Menu" onclick="GenresJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="gn-logo" href="Home" aria-label="Panelmoon home"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="gn-logo-t">Panel<span>moon</span></span></a>
+        <nav class="gn-nav" id="gn-nav" aria-label="Main">
+            <div class="gn-nav-top"><span class="gn-logo"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="gn-logo-t">Panel<span>moon</span></span></span>
+                <button type="button" class="gn-nav-x" aria-label="Close" onclick="GenresJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="gn-menu"><li><a class="gn-ml" href="Daily">New &amp; Daily</a></li><li><a class="gn-ml gn-on" href="Genres">Genres</a></li><li><a class="gn-ml" href="Artists">Artists</a></li><li><a class="gn-ml" href="Membership">Membership</a></li><li><a class="gn-ml" href="About">About</a></li></ul>
+            <div class="gn-nav-acct" id="gn-nav-acct">
+                <a class="gn-btn gn-btn-o" href="Login"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.4 4.2-6.5 8-6.5s7 2.1 8 6.5"/></svg> Member login</a>
+                <a class="gn-btn" href="ArtistLogin"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg> Artist login</a>
+            </div>
+            <div class="gn-nav-g"><div class="gn-nav-gt">Genres</div><a href="Genres?g=fantasy" style="--gn-g:#6C4BF4">Fantasy</a><a href="Genres?g=romance" style="--gn-g:#E8487A">Romance</a><a href="Genres?g=action" style="--gn-g:#F07B1F">Action</a><a href="Genres?g=comedy" style="--gn-g:#2FA35A">Comedy</a><a href="Genres?g=slice-of-life" style="--gn-g:#D9862E">Slice of Life</a><a href="Genres?g=mystery" style="--gn-g:#2E6F8E">Mystery</a><a href="Genres?g=sci-fi" style="--gn-g:#7A55C9">Sci-Fi</a><a href="Genres?g=spooky" style="--gn-g:#4A4A8A">Spooky</a></div>
+        </nav>
+        <div class="gn-search" id="gn-search">
+            <span class="gn-search-ic"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+            <input type="search" id="gn-q" placeholder="Search series, episodes, artists" autocomplete="off" maxlength="40" oninput="GenresJs.search(this.value)" onfocus="GenresJs.search(this.value)" onkeydown="GenresJs.searchKey(event)" aria-label="Search">
+            <div class="gn-sugg" id="gn-sugg"></div>
+        </div>
+        <button type="button" class="gn-sbtn" aria-label="Search" onclick="GenresJs.toggleSearch()"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+        <div class="gn-acct" id="gn-acct">
+            <a class="gn-btn gn-btn-s gn-btn-o" href="Login">Log in</a>
+            <a class="gn-btn gn-btn-s" href="ArtistLogin"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><span>Artist</span></a>
+        </div>
+    </div>
+    <div class="gn-gbar"><div class="gn-gbar-in"><a href="Genres?g=fantasy" style="--gn-g:#6C4BF4">Fantasy</a><a href="Genres?g=romance" style="--gn-g:#E8487A">Romance</a><a href="Genres?g=action" style="--gn-g:#F07B1F">Action</a><a href="Genres?g=comedy" style="--gn-g:#2FA35A">Comedy</a><a href="Genres?g=slice-of-life" style="--gn-g:#D9862E">Slice of Life</a><a href="Genres?g=mystery" style="--gn-g:#2E6F8E">Mystery</a><a href="Genres?g=sci-fi" style="--gn-g:#7A55C9">Sci-Fi</a><a href="Genres?g=spooky" style="--gn-g:#4A4A8A">Spooky</a></div></div>
+    <div class="gn-scrim" id="gn-scrim" onclick="GenresJs.closeNav()"></div>
+</header>
+<main class="gn-main">
+<section class="gn-phead gn-ghead" id="gn-ghead" style="--gn-g:{plhd_gcolor}">
+    <div class="gn-wrap">
+        <div class="gn-eyebrow">Genres</div>
+        <h1 id="gn-gtitle">{plhd_gtitle}</h1>
+        <p id="gn-gblurb">{plhd_gblurb}</p>
+    </div>
+</section>
+<section class="gn-wrap gn-sec">
+    <div class="gn-gchips" id="gn-chips">{plhd_chips}</div>
+    <input type="hidden" id="gn-genre" value="{plhd_genre}">
+    <div class="gn-filters">
+        <div class="gn-fgroup"><span class="gn-flabel">Schedule</span><label class="gn-rad"><input type="radio" name="gn-sch" value=""{plhd_sch_any} onchange="GenresJs.filter()"><span>Any</span></label><label class="gn-rad"><input type="radio" name="gn-sch" value="daily"{plhd_sch_daily} onchange="GenresJs.filter()"><span>Daily</span></label><label class="gn-rad"><input type="radio" name="gn-sch" value="weekly"{plhd_sch_weekly} onchange="GenresJs.filter()"><span>Weekly</span></label></div>
+        <div class="gn-fgroup"><span class="gn-flabel">Status</span><label class="gn-rad"><input type="radio" name="gn-st" value=""{plhd_st_any} onchange="GenresJs.filter()"><span>Any</span></label><label class="gn-rad"><input type="radio" name="gn-st" value="ongoing"{plhd_st_ongoing} onchange="GenresJs.filter()"><span>Ongoing</span></label><label class="gn-rad"><input type="radio" name="gn-st" value="completed"{plhd_st_completed} onchange="GenresJs.filter()"><span>Completed</span></label></div>
+        <label class="gn-sort"><span>Sort</span><select id="gn-sort" onchange="GenresJs.filter()"><option value="">Most popular</option><option value="new">Newest update</option><option value="liked">Most liked</option><option value="az">A to Z</option></select></label>
+    </div>
+    <p class="gn-count" id="gn-count">{plhd_count}</p>
+    <div class="gn-cards" id="gn-grid">{plhd_grid}</div>
+</section>
+</main>
+<footer class="gn-foot">
+    <div class="gn-foot-in">
+        <div class="gn-fbrand">
+            <a class="gn-logo gn-logo-l" href="Home"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="gn-logo-t">Panel<span>moon</span></span></a>
+            <p>Comics that turn the page. Daily and weekly series from independent artists, read in a page-flipping reader on any screen.</p>
+            <form class="gn-nl" onsubmit="return GenresJs.newsletter()">
+                <label for="gn-nl-email">New-episode picks, once a week</label>
+                <div class="gn-nl-row"><input type="email" id="gn-nl-email" placeholder="you@example.com" maxlength="80" autocomplete="email"><button type="submit" class="gn-btn gn-btn-s">Subscribe</button></div>
+                <div class="gn-nl-msg" id="gn-nl-msg" aria-live="polite"></div>
+            </form>
+        </div>
+        <div class="gn-fcol"><div class="gn-ftitle">Read</div><ul><li><a href="Daily">New &amp; Daily</a></li><li><a href="Genres">All genres</a></li><li><a href="Daily?d=done">Completed series</a></li><li><a href="Search">Search</a></li></ul></div><div class="gn-fcol"><div class="gn-ftitle">Create</div><ul><li><a href="Studio">Artist Studio</a></li><li><a href="ArtistLogin">Artist login</a></li><li><a href="Membership#plans">Creator plan</a></li><li><a href="Artists">Artists</a></li></ul></div><div class="gn-fcol"><div class="gn-ftitle">Panelmoon</div><ul><li><a href="About">About Panelmoon</a></li><li><a href="Membership">Membership</a></li><li><a href="Login">Member login</a></li><li><a href="About#contact">Contact</a></li></ul></div>
+    </div>
+    <div class="gn-foot-b"><span>&copy; 2026 Panelmoon &middot; A fictional demo built with the SkyNet Framework</span><span>All series, artists, comments and numbers are invented.</span></div>
+</footer>
+<div class="gn-toast" id="gn-toast" role="status" aria-live="polite"></div>
+</div>

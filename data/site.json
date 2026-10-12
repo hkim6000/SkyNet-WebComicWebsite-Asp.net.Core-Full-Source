@@ -1,0 +1,1081 @@
+{
+  "genres": [
+    {
+      "key": "fantasy",
+      "label": "Fantasy",
+      "color": "#6C4BF4",
+      "blurb": "Magic, quests and creatures"
+    },
+    {
+      "key": "romance",
+      "label": "Romance",
+      "color": "#E8487A",
+      "blurb": "Slow burns and sweet beginnings"
+    },
+    {
+      "key": "action",
+      "label": "Action",
+      "color": "#F07B1F",
+      "blurb": "Races, rivals and big jumps"
+    },
+    {
+      "key": "comedy",
+      "label": "Comedy",
+      "color": "#2FA35A",
+      "blurb": "Laughs in every panel"
+    },
+    {
+      "key": "slice-of-life",
+      "label": "Slice of Life",
+      "color": "#D9862E",
+      "blurb": "Small moments, big feelings"
+    },
+    {
+      "key": "mystery",
+      "label": "Mystery",
+      "color": "#2E6F8E",
+      "blurb": "Clues, cases and late nights"
+    },
+    {
+      "key": "sci-fi",
+      "label": "Sci-Fi",
+      "color": "#7A55C9",
+      "blurb": "Space, robots and the future"
+    },
+    {
+      "key": "spooky",
+      "label": "Spooky",
+      "color": "#4A4A8A",
+      "blurb": "Friendly ghosts, all ages"
+    }
+  ],
+  "days": [
+    {
+      "key": "mon",
+      "short": "Mon",
+      "name": "Monday"
+    },
+    {
+      "key": "tue",
+      "short": "Tue",
+      "name": "Tuesday"
+    },
+    {
+      "key": "wed",
+      "short": "Wed",
+      "name": "Wednesday"
+    },
+    {
+      "key": "thu",
+      "short": "Thu",
+      "name": "Thursday"
+    },
+    {
+      "key": "fri",
+      "short": "Fri",
+      "name": "Friday"
+    },
+    {
+      "key": "sat",
+      "short": "Sat",
+      "name": "Saturday"
+    },
+    {
+      "key": "sun",
+      "short": "Sun",
+      "name": "Sunday"
+    }
+  ],
+  "artists": [
+    {
+      "key": "elsie-marlowe",
+      "name": "Elsie Marlowe",
+      "handle": "@elsiedraws",
+      "location": "Portland, OR",
+      "joined": 2021,
+      "followers": 96400,
+      "bio": "Elsie paints cozy night skies and small brave heroes. She keeps a real lantern on her desk for reference and swears it hums."
+    },
+    {
+      "key": "jun-hartley",
+      "name": "Jun Hartley",
+      "handle": "@junhartley",
+      "location": "Seattle, WA",
+      "joined": 2022,
+      "followers": 71200,
+      "bio": "Jun draws romance in coffee shops, mostly because Jun writes in coffee shops. Rain Check Café is drawn one latte at a time."
+    },
+    {
+      "key": "dax-moreno",
+      "name": "Dax Moreno",
+      "handle": "@daxdraws",
+      "location": "Chicago, IL",
+      "joined": 2020,
+      "followers": 128900,
+      "bio": "Former bike messenger turned comic artist. Dax storyboards every chase on a whiteboard and times it with a stopwatch."
+    },
+    {
+      "key": "penny-kroft",
+      "name": "Penny Kroft",
+      "handle": "@pennykroft",
+      "location": "Austin, TX",
+      "joined": 2019,
+      "followers": 154300,
+      "bio": "Penny worked nine years in an office before quitting to draw one. Every Office Goblin gag is based on a true story. Mostly."
+    },
+    {
+      "key": "tomas-lind",
+      "name": "Tomas Lind",
+      "handle": "@tomaslind",
+      "location": "Minneapolis, MN",
+      "joined": 2023,
+      "followers": 38700,
+      "bio": "Tomas grows tomatoes on a tiny balcony and draws gentle stories about family, patience and things that take their time."
+    },
+    {
+      "key": "ada-quill",
+      "name": "Ada Quill",
+      "handle": "@adaquill",
+      "location": "Boston, MA",
+      "joined": 2021,
+      "followers": 64100,
+      "bio": "A former librarian who loves a good locked-room puzzle. Ada plans every clue before she draws the first panel."
+    },
+    {
+      "key": "sol-reyes",
+      "name": "Sol Reyes",
+      "handle": "@solreyes",
+      "location": "Albuquerque, NM",
+      "joined": 2022,
+      "followers": 82500,
+      "bio": "Sol draws cozy science fiction: diners, docking bays and robots with feelings. Sol's real-life breakfast is always pancakes."
+    },
+    {
+      "key": "wren-holloway",
+      "name": "Wren Holloway",
+      "handle": "@wrenholloway",
+      "location": "Savannah, GA",
+      "joined": 2023,
+      "followers": 47800,
+      "bio": "Wren lives in a very old building with very creaky floors. Ghost Next Door is what happens when you listen to them at night."
+    }
+  ],
+  "series": [
+    {
+      "key": "lantern-keeper",
+      "title": "The Lantern Keeper",
+      "genre": "fantasy",
+      "artist": "elsie-marlowe",
+      "schedule": "weekly",
+      "day": "mon",
+      "status": "ongoing",
+      "views": 2481300,
+      "subscribers": 184200,
+      "rating": "All ages",
+      "tags": [
+        "Magic",
+        "Cozy",
+        "Adventure"
+      ],
+      "theme": "#4A4E9A",
+      "tagline": "Every lantern holds a fallen star.",
+      "synopsis": "In the hill town of Emberwick, every lantern holds a fallen star. Apprentice keeper Mira and her star-fox Bo light them each night, until one lantern goes dark and a frightened little star lands on Moss Hill.",
+      "episodes": [
+        {
+          "no": 1,
+          "title": "The Last Lantern",
+          "pages": 6,
+          "views": 1033875,
+          "likes": 63066,
+          "dislikes": 756,
+          "comments": [
+            {
+              "user": "noodle_knight",
+              "text": "Bo asking about noodles in EVERY panel is the most relatable thing.",
+              "likes": 412,
+              "mins": 340
+            },
+            {
+              "user": "starlit.page",
+              "text": "The lantern glow is so pretty. Monday is my favorite day now.",
+              "likes": 238,
+              "mins": 1210
+            },
+            {
+              "user": "mapleink",
+              "text": "Wait, the star is CRYING? I need episode 2 right now.",
+              "likes": 197,
+              "mins": 95
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "title": "A Star on the Hill",
+          "pages": 6,
+          "views": 884997,
+          "likes": 50444,
+          "dislikes": 756,
+          "comments": [
+            {
+              "user": "tinyfoxes",
+              "text": "Bo sharing his donut with the star. I'm not crying, you are.",
+              "likes": 506,
+              "mins": 640
+            },
+            {
+              "user": "kettle_reads",
+              "text": "\"Keeper's promise\" gave me chills.",
+              "likes": 221,
+              "mins": 2300
+            },
+            {
+              "user": "lumen_lu",
+              "text": "Grandma Ilse is going to be the MVP, I can feel it.",
+              "likes": 164,
+              "mins": 3900
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "title": "The Way Back Up",
+          "pages": 6,
+          "views": 736119,
+          "likes": 39014,
+          "dislikes": 702,
+          "comments": [
+            {
+              "user": "noodle_knight",
+              "text": "NOODLES! Called it.",
+              "likes": 388,
+              "mins": 120
+            },
+            {
+              "user": "moss.hill.fan",
+              "text": "The empty lantern glowing at the end... perfect episode.",
+              "likes": 301,
+              "mins": 860
+            },
+            {
+              "user": "pinecone_pal",
+              "text": "I want a whole spin-off about the bell tower stairs.",
+              "likes": 77,
+              "mins": 1500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rain-check-cafe",
+      "title": "Rain Check Café",
+      "genre": "romance",
+      "artist": "jun-hartley",
+      "schedule": "weekly",
+      "day": "wed",
+      "status": "ongoing",
+      "views": 1964800,
+      "subscribers": 152900,
+      "rating": "All ages",
+      "tags": [
+        "Coffee",
+        "Sweet",
+        "Slow burn"
+      ],
+      "theme": "#3E6E5A",
+      "tagline": "No umbrella. Again.",
+      "synopsis": "Every rainy day, the same illustrator runs into Rain Check Café without an umbrella. Every rainy day, barista Ari pretends not to notice. A slow-brewed love story, one latte at a time.",
+      "episodes": [
+        {
+          "no": 1,
+          "title": "Oat Latte, No Umbrella",
+          "pages": 6,
+          "views": 818666,
+          "likes": 49938,
+          "dislikes": 749,
+          "comments": [
+            {
+              "user": "latte_letters",
+              "text": "Third time this week LOL. Noah please buy an umbrella.",
+              "likes": 356,
+              "mins": 410
+            },
+            {
+              "user": "rosa_stan",
+              "text": "Rosa is all of us watching from the counter.",
+              "likes": 298,
+              "mins": 1300
+            },
+            {
+              "user": "drizzle.days",
+              "text": "It's the espresso machine. Sure, Ari. Sure.",
+              "likes": 241,
+              "mins": 2700
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "title": "The Umbrella Returns",
+          "pages": 6,
+          "views": 700778,
+          "likes": 39944,
+          "dislikes": 718,
+          "comments": [
+            {
+              "user": "latte_letters",
+              "text": "He returned it on a SUNNY day. Respect.",
+              "likes": 433,
+              "mins": 520
+            },
+            {
+              "user": "sketchbook_sam",
+              "text": "The drawing on the cup sleeve!! Too sweet.",
+              "likes": 276,
+              "mins": 980
+            },
+            {
+              "user": "oatmilk_only",
+              "text": "Rosa yelling ON THE HOUSE is my new ringtone.",
+              "likes": 190,
+              "mins": 4400
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "title": "Cloudy with a Chance",
+          "pages": 6,
+          "views": 582890,
+          "likes": 30893,
+          "dislikes": 370,
+          "comments": [
+            {
+              "user": "drizzle.days",
+              "text": "\"Only if you bring an umbrella.\" I'm screaming.",
+              "likes": 512,
+              "mins": 300
+            },
+            {
+              "user": "rosa_stan",
+              "text": "Rosa texting the whole family, iconic.",
+              "likes": 345,
+              "mins": 1800
+            },
+            {
+              "user": "slowburn_club",
+              "text": "Finally a date! Worth every rainy Wednesday.",
+              "likes": 268,
+              "mins": 3100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rooftop-relay",
+      "title": "Rooftop Relay",
+      "genre": "action",
+      "artist": "dax-moreno",
+      "schedule": "daily",
+      "day": "",
+      "status": "ongoing",
+      "views": 3120500,
+      "subscribers": 211400,
+      "rating": "All ages",
+      "tags": [
+        "Parkour",
+        "Rivals",
+        "City"
+      ],
+      "theme": "#D9822B",
+      "tagline": "No elevators. No traffic. No problem.",
+      "synopsis": "Zee is the fastest rooftop courier in Highline, with Pip on the radio and a bag full of rush jobs. Then rival runner Vex shows up on the same route, and every delivery turns into a race.",
+      "episodes": [
+        {
+          "no": 1,
+          "title": "Package for the Top Floor",
+          "pages": 6,
+          "views": 1300208,
+          "likes": 79312,
+          "dislikes": 1427,
+          "comments": [
+            {
+              "user": "parkour_pat",
+              "text": "The speed lines in this series are unreal.",
+              "likes": 289,
+              "mins": 200
+            },
+            {
+              "user": "pip_on_radio",
+              "text": "Pip is the real MVP. Navigation queen.",
+              "likes": 247,
+              "mins": 760
+            },
+            {
+              "user": "highline_runner",
+              "text": "Vex has villain energy and I love it.",
+              "likes": 158,
+              "mins": 2100
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "title": "Race to Tower Nine",
+          "pages": 6,
+          "views": 1112978,
+          "likes": 63439,
+          "dislikes": 761,
+          "comments": [
+            {
+              "user": "parkour_pat",
+              "text": "THE LAUNDRY LINE SWING. Chef's kiss.",
+              "likes": 401,
+              "mins": 150
+            },
+            {
+              "user": "speedy_s",
+              "text": "11:59. My heart can't take this.",
+              "likes": 212,
+              "mins": 1100
+            },
+            {
+              "user": "cityscape.fan",
+              "text": "Same address?? Plot twist!",
+              "likes": 189,
+              "mins": 2600
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "title": "Special Delivery",
+          "pages": 6,
+          "views": 925748,
+          "likes": 49064,
+          "dislikes": 735,
+          "comments": [
+            {
+              "user": "pip_on_radio",
+              "text": "Rivals to friends arc, my favorite.",
+              "likes": 377,
+              "mins": 90
+            },
+            {
+              "user": "cake_first",
+              "text": "Vex being late for his sister's stuff... oof, felt that.",
+              "likes": 251,
+              "mins": 700
+            },
+            {
+              "user": "highline_runner",
+              "text": "Last one down buys snacks. Daily updates are a gift.",
+              "likes": 143,
+              "mins": 1900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "office-goblin",
+      "title": "Office Goblin",
+      "genre": "comedy",
+      "artist": "penny-kroft",
+      "schedule": "daily",
+      "day": "",
+      "status": "ongoing",
+      "views": 4215700,
+      "subscribers": 268300,
+      "rating": "All ages",
+      "tags": [
+        "Workplace",
+        "Gag",
+        "Goblins"
+      ],
+      "theme": "#4F9A4A",
+      "tagline": "He loves treasure. He hates Mondays.",
+      "synopsis": "Grub is a goblin. Grub is also Papercorp's newest hire. He loves treasure, hates Mondays and has very strong feelings about staplers. His coworker Dana is doing her best.",
+      "episodes": [
+        {
+          "no": 1,
+          "title": "Monday, Again",
+          "pages": 6,
+          "views": 1756541,
+          "likes": 107149,
+          "dislikes": 1928,
+          "comments": [
+            {
+              "user": "stapler_saga",
+              "text": "Shiny! Clicky! MINE. Grub is my spirit animal.",
+              "likes": 688,
+              "mins": 60
+            },
+            {
+              "user": "dana_deserves_raise",
+              "text": "Dana deserves a raise. And a vacation.",
+              "likes": 431,
+              "mins": 520
+            },
+            {
+              "user": "mondayhater",
+              "text": "\"Goblins collect treasure. It's tradition.\" HR has entered the chat.",
+              "likes": 377,
+              "mins": 1400
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "title": "The Coffee Machine Quest",
+          "pages": 6,
+          "views": 1503599,
+          "likes": 85705,
+          "dislikes": 1028,
+          "comments": [
+            {
+              "user": "coffee_or_chaos",
+              "text": "WAKE UP, METAL BOX is how I start every morning.",
+              "likes": 590,
+              "mins": 110
+            },
+            {
+              "user": "stapler_saga",
+              "text": "He also kicked it a little. LMAO.",
+              "likes": 402,
+              "mins": 860
+            },
+            {
+              "user": "breakroom_bard",
+              "text": "Free coffee for everyone! Best boss energy.",
+              "likes": 233,
+              "mins": 2300
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "title": "Employee of the Month",
+          "pages": 6,
+          "views": 1250657,
+          "likes": 66284,
+          "dislikes": 994,
+          "comments": [
+            {
+              "user": "dana_deserves_raise",
+              "text": "DANA GOT EMPLOYEE OF THE MONTH. Justice.",
+              "likes": 512,
+              "mins": 70
+            },
+            {
+              "user": "donut_hoarder",
+              "text": "A golden donut is still treasure. He's right.",
+              "likes": 466,
+              "mins": 640
+            },
+            {
+              "user": "mondayhater",
+              "text": "Shredding the monthly report is my dream.",
+              "likes": 201,
+              "mins": 1700
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sunday-plants",
+      "title": "Sunday Plants",
+      "genre": "slice-of-life",
+      "artist": "tomas-lind",
+      "schedule": "weekly",
+      "day": "sun",
+      "status": "ongoing",
+      "views": 842600,
+      "subscribers": 71800,
+      "rating": "All ages",
+      "tags": [
+        "Family",
+        "Gardening",
+        "Heartwarming"
+      ],
+      "theme": "#C9673F",
+      "tagline": "Good things take their time.",
+      "synopsis": "Every Sunday, Mina visits Grandpa Hal's balcony garden. One tiny seed teaches them both about patience, songs and the grandma who grew the sweetest tomatoes on the street.",
+      "episodes": [
+        {
+          "no": 1,
+          "title": "One Small Seed",
+          "pages": 6,
+          "views": 351083,
+          "likes": 21416,
+          "dislikes": 385,
+          "comments": [
+            {
+              "user": "green_thumb_gran",
+              "text": "\"Everything starts as a little dot.\" I needed that today.",
+              "likes": 304,
+              "mins": 380
+            },
+            {
+              "user": "balcony_bloom",
+              "text": "Mina falling asleep watching the pot, so cute.",
+              "likes": 211,
+              "mins": 1500
+            },
+            {
+              "user": "sunday_reader",
+              "text": "This is my calm place every week.",
+              "likes": 156,
+              "mins": 3600
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "title": "Waiting Is Hard",
+          "pages": 6,
+          "views": 300527,
+          "likes": 17130,
+          "dislikes": 205,
+          "comments": [
+            {
+              "user": "balcony_bloom",
+              "text": "Grandma's tomatoes... I wasn't ready for that.",
+              "likes": 342,
+              "mins": 430
+            },
+            {
+              "user": "songbird_99",
+              "text": "Singing to plants is real. Mine love jazz.",
+              "likes": 188,
+              "mins": 1200
+            },
+            {
+              "user": "green_thumb_gran",
+              "text": "\"Seeds don't break. They think.\" Beautiful.",
+              "likes": 263,
+              "mins": 2800
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "title": "Hello, Sprout",
+          "pages": 6,
+          "views": 249971,
+          "likes": 13248,
+          "dislikes": 198,
+          "comments": [
+            {
+              "user": "sunday_reader",
+              "text": "GUS!!! Welcome to the family, Gus.",
+              "likes": 489,
+              "mins": 200
+            },
+            {
+              "user": "tomato_jr",
+              "text": "Tomato Junior was robbed.",
+              "likes": 302,
+              "mins": 900
+            },
+            {
+              "user": "balcony_bloom",
+              "text": "\"Your grandma would've loved this.\" Okay, now I'm crying.",
+              "likes": 377,
+              "mins": 2100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "quiet-archive",
+      "title": "The Quiet Archive",
+      "genre": "mystery",
+      "artist": "ada-quill",
+      "schedule": "weekly",
+      "day": "thu",
+      "status": "completed",
+      "views": 1388200,
+      "subscribers": 97400,
+      "rating": "All ages",
+      "tags": [
+        "Library",
+        "Cozy mystery",
+        "Cats"
+      ],
+      "theme": "#2F4A5A",
+      "tagline": "Somebody is reading after hours.",
+      "synopsis": "Books are moving at night in the Ashgrove Public Library. Head librarian Iris and her nervous intern Felix stay after closing to catch the culprit. A cozy mystery in three chapters.",
+      "episodes": [
+        {
+          "no": 1,
+          "title": "Books Out of Place",
+          "pages": 6,
+          "views": 578416,
+          "likes": 35283,
+          "dislikes": 635,
+          "comments": [
+            {
+              "user": "shelf_sleuth",
+              "text": "Ghosts don't read cookbooks. Iris is a legend.",
+              "likes": 291,
+              "mins": 9800
+            },
+            {
+              "user": "felix_fanclub",
+              "text": "Felix being scared of everything is so me.",
+              "likes": 204,
+              "mins": 12000
+            },
+            {
+              "user": "dewey_decimal",
+              "text": "A hidden map in a library book is my dream mystery.",
+              "likes": 167,
+              "mins": 15000
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "title": "After Hours",
+          "pages": 6,
+          "views": 495124,
+          "likes": 28222,
+          "dislikes": 338,
+          "comments": [
+            {
+              "user": "shelf_sleuth",
+              "text": "MRRRP. I knew it was a cat. I KNEW it.",
+              "likes": 333,
+              "mins": 9300
+            },
+            {
+              "user": "bookmark_bandit",
+              "text": "The attic scene was genuinely spooky!",
+              "likes": 182,
+              "mins": 11000
+            },
+            {
+              "user": "felix_fanclub",
+              "text": "\"Of course it is.\" - Felix, every time.",
+              "likes": 245,
+              "mins": 14000
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "title": "The Night Reader",
+          "pages": 6,
+          "views": 411832,
+          "likes": 21827,
+          "dislikes": 327,
+          "comments": [
+            {
+              "user": "dewey_decimal",
+              "text": "Ledger the library cat. Perfect ending.",
+              "likes": 512,
+              "mins": 8900
+            },
+            {
+              "user": "bookmark_bandit",
+              "text": "She steals bookmarks for her bed. Same.",
+              "likes": 310,
+              "mins": 10000
+            },
+            {
+              "user": "shelf_sleuth",
+              "text": "Please give us a season two, Ada!",
+              "likes": 287,
+              "mins": 12500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "orbit-diner",
+      "title": "Orbit Diner",
+      "genre": "sci-fi",
+      "artist": "sol-reyes",
+      "schedule": "weekly",
+      "day": "tue",
+      "status": "ongoing",
+      "views": 1576900,
+      "subscribers": 118600,
+      "rating": "All ages",
+      "tags": [
+        "Space",
+        "Robots",
+        "Found family"
+      ],
+      "theme": "#6B4AA0",
+      "tagline": "Open 25 hours a day.",
+      "synopsis": "Above planet Velo floats a diner that's open 25 hours a day. Nova cooks, Bolt the robot (mostly) serves, and space trucker Cass always orders the moon pancakes.",
+      "episodes": [
+        {
+          "no": 1,
+          "title": "Open 25 Hours",
+          "pages": 6,
+          "views": 657041,
+          "likes": 40079,
+          "dislikes": 480,
+          "comments": [
+            {
+              "user": "moon_pancake",
+              "text": "Open 25 hours a day is such a good joke.",
+              "likes": 266,
+              "mins": 260
+            },
+            {
+              "user": "gyro_bolt",
+              "text": "Bolt's \"WOBBLE ALERT\" lives in my head now.",
+              "likes": 241,
+              "mins": 1100
+            },
+            {
+              "user": "cargo_cass",
+              "text": "Pancakes on the hat. Best hat ever.",
+              "likes": 175,
+              "mins": 2900
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "title": "Zero-G Breakfast",
+          "pages": 6,
+          "views": 562427,
+          "likes": 32058,
+          "dislikes": 480,
+          "comments": [
+            {
+              "user": "gyro_bolt",
+              "text": "Coffee is now a sphere. I'm crying.",
+              "likes": 377,
+              "mins": 390
+            },
+            {
+              "user": "zero_g_fan",
+              "text": "The floating panels are so fun to read.",
+              "likes": 204,
+              "mins": 1300
+            },
+            {
+              "user": "moon_pancake",
+              "text": "Cass leaving?? Not my comfort diner!",
+              "likes": 188,
+              "mins": 2500
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "title": "A Pie for the Long Haul",
+          "pages": 6,
+          "views": 467813,
+          "likes": 24794,
+          "dislikes": 446,
+          "comments": [
+            {
+              "user": "cargo_cass",
+              "text": "\"My eyes are leaking. Odd.\" BOLT. My heart.",
+              "likes": 498,
+              "mins": 180
+            },
+            {
+              "user": "star_fruit_pie",
+              "text": "See you next orbit. I'll be waiting.",
+              "likes": 266,
+              "mins": 990
+            },
+            {
+              "user": "zero_g_fan",
+              "text": "Found family in space is the best genre.",
+              "likes": 219,
+              "mins": 2200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ghost-next-door",
+      "title": "Ghost Next Door",
+      "genre": "spooky",
+      "artist": "wren-holloway",
+      "schedule": "weekly",
+      "day": "sat",
+      "status": "ongoing",
+      "views": 1097300,
+      "subscribers": 86900,
+      "rating": "All ages",
+      "tags": [
+        "Ghosts",
+        "Friendship",
+        "Apartment"
+      ],
+      "theme": "#3A3A6A",
+      "tagline": "Friendly, chatty and completely see-through.",
+      "synopsis": "Leo just moved into apartment 4B of the hundred-year-old Bellwood. His new neighbor is friendly, chatty and completely see-through, and she has been waiting a very long time for the music to come back.",
+      "episodes": [
+        {
+          "no": 1,
+          "title": "New Kid, Old Building",
+          "pages": 6,
+          "views": 457208,
+          "likes": 27889,
+          "dislikes": 418,
+          "comments": [
+            {
+              "user": "bellwood_4b",
+              "text": "They BOTH screamed. I'm dying.",
+              "likes": 344,
+              "mins": 310
+            },
+            {
+              "user": "friendly_spook",
+              "text": "Do ghosts like pizza? Important question.",
+              "likes": 263,
+              "mins": 1000
+            },
+            {
+              "user": "creaky_floors",
+              "text": "Wisp's little bow is adorable.",
+              "likes": 181,
+              "mins": 2400
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "title": "Ghosts Can't Do Homework",
+          "pages": 6,
+          "views": 391370,
+          "likes": 22308,
+          "dislikes": 401,
+          "comments": [
+            {
+              "user": "history_buff",
+              "text": "A ballroom on the roof! I love this building.",
+              "likes": 279,
+              "mins": 460
+            },
+            {
+              "user": "bellwood_4b",
+              "text": "\"Um. Myself?\" Leo, smooth.",
+              "likes": 233,
+              "mins": 1600
+            },
+            {
+              "user": "friendly_spook",
+              "text": "Waiting for the music to come back... oh no, my heart.",
+              "likes": 302,
+              "mins": 3000
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "title": "Wisp's Favorite Song",
+          "pages": 6,
+          "views": 325532,
+          "likes": 17253,
+          "dislikes": 207,
+          "comments": [
+            {
+              "user": "creaky_floors",
+              "text": "WISP DANCING. Best page in the series.",
+              "likes": 455,
+              "mins": 220
+            },
+            {
+              "user": "doo_wah_dan",
+              "text": "Mom hearing the music from the hallway, so sweet.",
+              "likes": 288,
+              "mins": 1200
+            },
+            {
+              "user": "history_buff",
+              "text": "Every Saturday! I'll be here every Saturday too.",
+              "likes": 197,
+              "mins": 2600
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "key": "free",
+      "name": "Free",
+      "price": "$0",
+      "period": "forever",
+      "lead": "Read, react and follow every series.",
+      "features": [
+        "Every published episode",
+        "Like, dislike and comment",
+        "Subscribe to series",
+        "New episode alerts"
+      ],
+      "cta": "Join free"
+    },
+    {
+      "key": "plus",
+      "name": "Plus",
+      "price": "$4.99",
+      "period": "per month",
+      "lead": "Read early and support your favorite artists.",
+      "features": [
+        "Everything in Free",
+        "Next episode 1 week early",
+        "No ads, ever",
+        "HD pages and full-screen reader",
+        "Half of your plan goes to artists"
+      ],
+      "cta": "Start Plus",
+      "best": true
+    },
+    {
+      "key": "creator",
+      "name": "Creator",
+      "price": "$0",
+      "period": "for artists",
+      "lead": "Publish your own series on Panelmoon.",
+      "features": [
+        "Artist Studio access",
+        "Drag-and-drop publishing",
+        "Daily or weekly schedules",
+        "Reader stats and comments"
+      ],
+      "cta": "Apply as artist"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Panelmoon free to read?",
+      "a": "Yes. Every published episode is free. Plus members get the next episode one week early and no ads."
+    },
+    {
+      "q": "How do daily and weekly series work?",
+      "a": "Daily series update every day. Weekly series update on the same day each week, shown on the series page and in the schedule."
+    },
+    {
+      "q": "Can I publish my own comic?",
+      "a": "Yes. Sign in to Artist Studio, choose a series, drag in your pages, put them in order and pick a release time."
+    },
+    {
+      "q": "Do artists get paid?",
+      "a": "Half of every Plus membership goes to the artists you read, split by the time you spend on their series."
+    },
+    {
+      "q": "Is this a real service?",
+      "a": "No. Panelmoon is a demo website template. Accounts, likes, comments and uploads are not stored."
+    }
+  ]
+}

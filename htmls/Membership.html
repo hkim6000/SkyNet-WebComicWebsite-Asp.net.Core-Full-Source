@@ -1,0 +1,82 @@
+<div class="mb-site" data-page="Membership">
+<header class="mb-head" id="mb-head">
+    <div class="mb-head-row">
+        <button type="button" class="mb-burger" aria-label="Menu" onclick="MembershipJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="mb-logo" href="Home" aria-label="Panelmoon home"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="mb-logo-t">Panel<span>moon</span></span></a>
+        <nav class="mb-nav" id="mb-nav" aria-label="Main">
+            <div class="mb-nav-top"><span class="mb-logo"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="mb-logo-t">Panel<span>moon</span></span></span>
+                <button type="button" class="mb-nav-x" aria-label="Close" onclick="MembershipJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="mb-menu"><li><a class="mb-ml" href="Daily">New &amp; Daily</a></li><li><a class="mb-ml" href="Genres">Genres</a></li><li><a class="mb-ml" href="Artists">Artists</a></li><li><a class="mb-ml mb-on" href="Membership">Membership</a></li><li><a class="mb-ml" href="About">About</a></li></ul>
+            <div class="mb-nav-acct" id="mb-nav-acct">
+                <a class="mb-btn mb-btn-o" href="Login"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.4 4.2-6.5 8-6.5s7 2.1 8 6.5"/></svg> Member login</a>
+                <a class="mb-btn" href="ArtistLogin"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg> Artist login</a>
+            </div>
+            <div class="mb-nav-g"><div class="mb-nav-gt">Genres</div><a href="Genres?g=fantasy" style="--mb-g:#6C4BF4">Fantasy</a><a href="Genres?g=romance" style="--mb-g:#E8487A">Romance</a><a href="Genres?g=action" style="--mb-g:#F07B1F">Action</a><a href="Genres?g=comedy" style="--mb-g:#2FA35A">Comedy</a><a href="Genres?g=slice-of-life" style="--mb-g:#D9862E">Slice of Life</a><a href="Genres?g=mystery" style="--mb-g:#2E6F8E">Mystery</a><a href="Genres?g=sci-fi" style="--mb-g:#7A55C9">Sci-Fi</a><a href="Genres?g=spooky" style="--mb-g:#4A4A8A">Spooky</a></div>
+        </nav>
+        <div class="mb-search" id="mb-search">
+            <span class="mb-search-ic"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+            <input type="search" id="mb-q" placeholder="Search series, episodes, artists" autocomplete="off" maxlength="40" oninput="MembershipJs.search(this.value)" onfocus="MembershipJs.search(this.value)" onkeydown="MembershipJs.searchKey(event)" aria-label="Search">
+            <div class="mb-sugg" id="mb-sugg"></div>
+        </div>
+        <button type="button" class="mb-sbtn" aria-label="Search" onclick="MembershipJs.toggleSearch()"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+        <div class="mb-acct" id="mb-acct">
+            <a class="mb-btn mb-btn-s mb-btn-o" href="Login">Log in</a>
+            <a class="mb-btn mb-btn-s" href="ArtistLogin"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><span>Artist</span></a>
+        </div>
+    </div>
+    <div class="mb-gbar"><div class="mb-gbar-in"><a href="Genres?g=fantasy" style="--mb-g:#6C4BF4">Fantasy</a><a href="Genres?g=romance" style="--mb-g:#E8487A">Romance</a><a href="Genres?g=action" style="--mb-g:#F07B1F">Action</a><a href="Genres?g=comedy" style="--mb-g:#2FA35A">Comedy</a><a href="Genres?g=slice-of-life" style="--mb-g:#D9862E">Slice of Life</a><a href="Genres?g=mystery" style="--mb-g:#2E6F8E">Mystery</a><a href="Genres?g=sci-fi" style="--mb-g:#7A55C9">Sci-Fi</a><a href="Genres?g=spooky" style="--mb-g:#4A4A8A">Spooky</a></div></div>
+    <div class="mb-scrim" id="mb-scrim" onclick="MembershipJs.closeNav()"></div>
+</header>
+<main class="mb-main">
+<section class="mb-phead mb-mhead">
+    <div class="mb-wrap">
+        <div class="mb-eyebrow">Membership</div>
+        <h1>Read free. Go Plus to read ahead.</h1>
+        <p>Everyone can read every episode. Plus members read a week early and help pay the artists.</p>
+    </div>
+</section>
+<section class="mb-wrap mb-sec" id="plans">
+    <div class="mb-plans">{plhd_plans}</div>
+</section>
+<section class="mb-wrap mb-sec">
+    <h2 class="mb-h2">Compare plans</h2>
+    <div class="mb-tablewrap"><table class="mb-cmp"><thead><tr><th></th><th>Free</th><th>Plus</th></tr></thead><tbody><tr><th>Read every episode</th><td>&#10003;</td><td>&#10003;</td></tr><tr><th>Like, dislike and comment</th><td>&#10003;</td><td>&#10003;</td></tr><tr><th>Subscribe and get alerts</th><td>&#10003;</td><td>&#10003;</td></tr><tr><th>Next episode a week early</th><td>&mdash;</td><td>&#10003;</td></tr><tr><th>No ads</th><td>&mdash;</td><td>&#10003;</td></tr><tr><th>HD pages</th><td>&mdash;</td><td>&#10003;</td></tr><tr><th>Half of your plan goes to artists</th><td>&mdash;</td><td>&#10003;</td></tr></tbody></table></div>
+</section>
+<section class="mb-wrap mb-sec mb-joinsec" id="join">
+    <div class="mb-join">
+        <div class="mb-join-l"><div class="mb-eyebrow">Join Panelmoon</div><h2>Create your reader account</h2><p>Pick a display name for comments, then choose a plan. You can switch plans any time.</p><p class="mb-demo">Demo: the server checks every field, but no account is created and nothing is charged.</p></div>
+        <form class="mb-form" onsubmit="return MembershipJs.join()" novalidate>
+            <label class="mb-field" for="mb-jname"><span>Display name</span><input type="text" id="mb-jname" class="mb-fv" data-k="name" placeholder="e.g. moonreader" maxlength="30" autocomplete="nickname"><em class="mb-err" id="mb-e-jname"></em></label>
+            <label class="mb-field" for="mb-jemail"><span>Email</span><input type="email" id="mb-jemail" class="mb-fv" data-k="email" placeholder="you@example.com" maxlength="80" autocomplete="email"><em class="mb-err" id="mb-e-jemail"></em></label>
+            <label class="mb-field" for="mb-jpass"><span>Password</span><input type="password" id="mb-jpass" class="mb-fv" data-k="password" placeholder="8+ characters, a letter and a number" maxlength="64" autocomplete="new-password"><em class="mb-err" id="mb-e-jpass"></em></label>
+            <div class="mb-field"><span>Plan</span><div class="mb-popts">{plhd_popts}</div><em class="mb-err" id="mb-e-jplan"></em></div>
+            <label class="mb-check"><input type="checkbox" id="mb-jage"><span>I am 13 or older.</span></label>
+            <label class="mb-check"><input type="checkbox" id="mb-jterms"><span>I agree to the community rules and terms.</span></label>
+            <em class="mb-err" id="mb-e-jterms"></em>
+            <button type="submit" class="mb-btn mb-btn-wide">Create account</button>
+            <div class="mb-done" id="mb-jdone" aria-live="polite"></div>
+        </form>
+    </div>
+</section>
+<section class="mb-wrap mb-sec">
+    <h2 class="mb-h2">Questions</h2>
+    <div class="mb-faqs">{plhd_faq}</div>
+</section>
+</main>
+<footer class="mb-foot">
+    <div class="mb-foot-in">
+        <div class="mb-fbrand">
+            <a class="mb-logo mb-logo-l" href="Home"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="mb-logo-t">Panel<span>moon</span></span></a>
+            <p>Comics that turn the page. Daily and weekly series from independent artists, read in a page-flipping reader on any screen.</p>
+            <form class="mb-nl" onsubmit="return MembershipJs.newsletter()">
+                <label for="mb-nl-email">New-episode picks, once a week</label>
+                <div class="mb-nl-row"><input type="email" id="mb-nl-email" placeholder="you@example.com" maxlength="80" autocomplete="email"><button type="submit" class="mb-btn mb-btn-s">Subscribe</button></div>
+                <div class="mb-nl-msg" id="mb-nl-msg" aria-live="polite"></div>
+            </form>
+        </div>
+        <div class="mb-fcol"><div class="mb-ftitle">Read</div><ul><li><a href="Daily">New &amp; Daily</a></li><li><a href="Genres">All genres</a></li><li><a href="Daily?d=done">Completed series</a></li><li><a href="Search">Search</a></li></ul></div><div class="mb-fcol"><div class="mb-ftitle">Create</div><ul><li><a href="Studio">Artist Studio</a></li><li><a href="ArtistLogin">Artist login</a></li><li><a href="Membership#plans">Creator plan</a></li><li><a href="Artists">Artists</a></li></ul></div><div class="mb-fcol"><div class="mb-ftitle">Panelmoon</div><ul><li><a href="About">About Panelmoon</a></li><li><a href="Membership">Membership</a></li><li><a href="Login">Member login</a></li><li><a href="About#contact">Contact</a></li></ul></div>
+    </div>
+    <div class="mb-foot-b"><span>&copy; 2026 Panelmoon &middot; A fictional demo built with the SkyNet Framework</span><span>All series, artists, comments and numbers are invented.</span></div>
+</footer>
+<div class="mb-toast" id="mb-toast" role="status" aria-live="polite"></div>
+</div>

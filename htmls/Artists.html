@@ -1,0 +1,54 @@
+<div class="ar-site" data-page="Artists">
+<header class="ar-head" id="ar-head">
+    <div class="ar-head-row">
+        <button type="button" class="ar-burger" aria-label="Menu" onclick="ArtistsJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="ar-logo" href="Home" aria-label="Panelmoon home"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="ar-logo-t">Panel<span>moon</span></span></a>
+        <nav class="ar-nav" id="ar-nav" aria-label="Main">
+            <div class="ar-nav-top"><span class="ar-logo"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="ar-logo-t">Panel<span>moon</span></span></span>
+                <button type="button" class="ar-nav-x" aria-label="Close" onclick="ArtistsJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="ar-menu"><li><a class="ar-ml" href="Daily">New &amp; Daily</a></li><li><a class="ar-ml" href="Genres">Genres</a></li><li><a class="ar-ml ar-on" href="Artists">Artists</a></li><li><a class="ar-ml" href="Membership">Membership</a></li><li><a class="ar-ml" href="About">About</a></li></ul>
+            <div class="ar-nav-acct" id="ar-nav-acct">
+                <a class="ar-btn ar-btn-o" href="Login"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.4 4.2-6.5 8-6.5s7 2.1 8 6.5"/></svg> Member login</a>
+                <a class="ar-btn" href="ArtistLogin"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg> Artist login</a>
+            </div>
+            <div class="ar-nav-g"><div class="ar-nav-gt">Genres</div><a href="Genres?g=fantasy" style="--ar-g:#6C4BF4">Fantasy</a><a href="Genres?g=romance" style="--ar-g:#E8487A">Romance</a><a href="Genres?g=action" style="--ar-g:#F07B1F">Action</a><a href="Genres?g=comedy" style="--ar-g:#2FA35A">Comedy</a><a href="Genres?g=slice-of-life" style="--ar-g:#D9862E">Slice of Life</a><a href="Genres?g=mystery" style="--ar-g:#2E6F8E">Mystery</a><a href="Genres?g=sci-fi" style="--ar-g:#7A55C9">Sci-Fi</a><a href="Genres?g=spooky" style="--ar-g:#4A4A8A">Spooky</a></div>
+        </nav>
+        <div class="ar-search" id="ar-search">
+            <span class="ar-search-ic"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+            <input type="search" id="ar-q" placeholder="Search series, episodes, artists" autocomplete="off" maxlength="40" oninput="ArtistsJs.search(this.value)" onfocus="ArtistsJs.search(this.value)" onkeydown="ArtistsJs.searchKey(event)" aria-label="Search">
+            <div class="ar-sugg" id="ar-sugg"></div>
+        </div>
+        <button type="button" class="ar-sbtn" aria-label="Search" onclick="ArtistsJs.toggleSearch()"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+        <div class="ar-acct" id="ar-acct">
+            <a class="ar-btn ar-btn-s ar-btn-o" href="Login">Log in</a>
+            <a class="ar-btn ar-btn-s" href="ArtistLogin"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><span>Artist</span></a>
+        </div>
+    </div>
+    <div class="ar-gbar"><div class="ar-gbar-in"><a href="Genres?g=fantasy" style="--ar-g:#6C4BF4">Fantasy</a><a href="Genres?g=romance" style="--ar-g:#E8487A">Romance</a><a href="Genres?g=action" style="--ar-g:#F07B1F">Action</a><a href="Genres?g=comedy" style="--ar-g:#2FA35A">Comedy</a><a href="Genres?g=slice-of-life" style="--ar-g:#D9862E">Slice of Life</a><a href="Genres?g=mystery" style="--ar-g:#2E6F8E">Mystery</a><a href="Genres?g=sci-fi" style="--ar-g:#7A55C9">Sci-Fi</a><a href="Genres?g=spooky" style="--ar-g:#4A4A8A">Spooky</a></div></div>
+    <div class="ar-scrim" id="ar-scrim" onclick="ArtistsJs.closeNav()"></div>
+</header>
+<main class="ar-main">
+{plhd_profile}
+<section class="ar-wrap ar-sec">
+    <div class="ar-sec-h"><h2 class="ar-h2">{plhd_listtitle}</h2><span class="ar-count" id="ar-acount">{plhd_acount}</span></div>
+    <div class="ar-gchips" id="ar-achips">{plhd_achips}</div>
+    <div class="ar-agrid" id="ar-agrid">{plhd_agrid}</div>
+</section>
+</main>
+<footer class="ar-foot">
+    <div class="ar-foot-in">
+        <div class="ar-fbrand">
+            <a class="ar-logo ar-logo-l" href="Home"><svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="11" fill="#1B1633"/><rect x="7" y="7" width="15" height="34" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M37 16a10 10 0 1 0 2 14 8 8 0 1 1-2-14z" fill="#FFC83D"/><circle cx="31" cy="12" r="1.8" fill="#FF5A4E"/></svg><span class="ar-logo-t">Panel<span>moon</span></span></a>
+            <p>Comics that turn the page. Daily and weekly series from independent artists, read in a page-flipping reader on any screen.</p>
+            <form class="ar-nl" onsubmit="return ArtistsJs.newsletter()">
+                <label for="ar-nl-email">New-episode picks, once a week</label>
+                <div class="ar-nl-row"><input type="email" id="ar-nl-email" placeholder="you@example.com" maxlength="80" autocomplete="email"><button type="submit" class="ar-btn ar-btn-s">Subscribe</button></div>
+                <div class="ar-nl-msg" id="ar-nl-msg" aria-live="polite"></div>
+            </form>
+        </div>
+        <div class="ar-fcol"><div class="ar-ftitle">Read</div><ul><li><a href="Daily">New &amp; Daily</a></li><li><a href="Genres">All genres</a></li><li><a href="Daily?d=done">Completed series</a></li><li><a href="Search">Search</a></li></ul></div><div class="ar-fcol"><div class="ar-ftitle">Create</div><ul><li><a href="Studio">Artist Studio</a></li><li><a href="ArtistLogin">Artist login</a></li><li><a href="Membership#plans">Creator plan</a></li><li><a href="Artists">Artists</a></li></ul></div><div class="ar-fcol"><div class="ar-ftitle">Panelmoon</div><ul><li><a href="About">About Panelmoon</a></li><li><a href="Membership">Membership</a></li><li><a href="Login">Member login</a></li><li><a href="About#contact">Contact</a></li></ul></div>
+    </div>
+    <div class="ar-foot-b"><span>&copy; 2026 Panelmoon &middot; A fictional demo built with the SkyNet Framework</span><span>All series, artists, comments and numbers are invented.</span></div>
+</footer>
+<div class="ar-toast" id="ar-toast" role="status" aria-live="polite"></div>
+</div>
